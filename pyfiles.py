@@ -7,15 +7,15 @@ def multiply(x, y):
 def divide(x, y):
 	return x / y
 
-print('Calculator v0.1')
+print('Calculator v1.0.2')
 
 num1 = int(input('Enter Number: '))
-num2 = int(input('Enter second number: '))
 op = int(input('What would you like to do (Add/1, Subtract/2, multiply/3, divide/4): '))
+num2 = int(input('Enter second number: '))
 
 
-def operator(x, z, y):
-	print(num1, z , num2,'= ',y(num1, num2))
+def operator(x, y):
+	print(num1, x , num2,'= ',y(num1, num2))
 
 if op == 1:
 	operator(op, '+', add)
