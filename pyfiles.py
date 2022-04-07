@@ -1,4 +1,5 @@
-import sympy
+from sympy import symbols, Eq, solve
+
 
 print('Calculator v1.1')
 print('This is still rudimentary, but I plan on making this BIG B)')
