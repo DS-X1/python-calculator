@@ -1,38 +1,13 @@
-def add(x, y):
-	return x + y
-def subtract(x, y):
-	return x - y
-def multiply(x, y):
-	return x * y
-def divide(x, y):
-	return x / y
-
-
-
-print('Calculator v1.0.3')
+print('Calculator v1.1')
 print('This is still rudimentary, but I plan on making this BIG B)')
 while True:
 
 	print("State option: ")
-	operation = int(input("1. Integers with basic operations"))
+	operation = int(input("1. Integers with basic operations \n"))
 
 	if operation == 1:
 
-		num1 = int(input('Enter Number: '))
-		op = int(input('Add(1), Subtract(2), Multiply(3), Divide(4): '))
-		num2 = int(input('Enter second number: '))
-
-
-		def operator(x, y):
-			print(num1, x , num2,'= ',y(num1, num2))
-
-		if op == 1:
-			operator(op, '+', add)
-		if op == 2:
-			operator(op, '-', subtract)
-		if op == 3:
-			operator(op, '*', multiply)
-		if op == 4:
-			operator(op, '/', divide)
-
+		equation = input("Enter Operation: ")
+		ans = eval(equation)
+		print("ans = ", ans)
 		input("")
