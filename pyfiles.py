@@ -1,3 +1,5 @@
+import sympy
+
 print('Calculator v1.1')
 print('This is still rudimentary, but I plan on making this BIG B)')
 while True:
