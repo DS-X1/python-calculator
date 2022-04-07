@@ -9,7 +9,7 @@ def divide(x, y):
 
 
 
-print('Calculator v1.0.2')
+print('Calculator v1.0.3')
 print('This is still rudimentary, but I plan on making this BIG B)')
 while True:
 	num1 = int(input('Enter Number: '))
