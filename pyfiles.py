@@ -1,16 +1,35 @@
-from sympy import symbols, Eq, solve
+#from sympy import symbols, Eq, solve
+import os
+clear = lambda: os.system('cls')
 
 
-print('Calculator v1.1')
-print('This is still rudimentary, but I plan on making this BIG B)')
+clear()
+print('Calculator v1.2')
+print("")
+print('This is still a rudimentary build.')
+print("")
+print("")
+
 while True:
 
 	print("State option: ")
-	operation = int(input("1. Integers with basic operations \n"))
+	print("")
+
+	operation = int(input("1. Regular Operations \n2. Algebraic Expression \n>  "))
+	print("")
 
 	if operation == 1:
 
-		equation = input("Enter Operation: ")
+		equation = input("Enter Operation: \n>")
 		ans = eval(equation)
 		print("ans = ", ans)
 		input("")
+		clear()
+
+	elif operation == 2:
+		expr = input("Enter Operation (eg 2*x + 6): ")
+		x = int(input("Value for x: "))
+		ans = eval(expr)
+		print("ans = ", ans)
+		input("")
+		clear()
