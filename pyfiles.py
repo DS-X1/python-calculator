@@ -18,6 +18,8 @@ while True:
 	operation = int(input("1. Regular Operations \n2. Algebraic Expression \n>  "))
 	print("")
 
+	
+
 	if operation == 1:
 
 		equation = input("Enter Operation: \n>")
@@ -33,3 +35,9 @@ while True:
 		print("ans = ", ans)
 		input("")
 		clear()
+
+	else:
+		print("error: Select a valid option!")
+		input("")
+		clear()
+		continue
